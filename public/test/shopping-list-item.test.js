@@ -12,8 +12,13 @@ describe("ShoppingListItem", function() {
     const apple = new ShoppingListItem("apple", "red");
     expect(apple.description).equal("red");
   });
-  it("should have isDone", function(){
-    const apple = new ShoppingListItem('apple', 'red');
+  it("should have isDone", function() {
+    const apple = new ShoppingListItem("apple", "red");
     expect(apple.isDone).not.equal(undefined);
-  })
+  });
+  it("should have two arguments, 'name' and description'.", function() {
+    const apple = new ShoppingListItem("apple", "red");
+    expect(apple.name).equal("apple");
+    expect(apple.description).equal("red");
+  });
 });
