@@ -12,4 +12,8 @@ describe("ShoppingListItem", function() {
     const apple = new ShoppingListItem("apple", "red");
     expect(apple.description).equal("red");
   });
+  it("should have isDone", function(){
+    const apple = new ShoppingListItem('apple', 'red');
+    expect(apple.isDone).not.equal(undefined);
+  })
 });
