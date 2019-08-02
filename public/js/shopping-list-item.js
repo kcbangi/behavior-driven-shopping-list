@@ -8,8 +8,9 @@ class ShoppingListItem {
     this.isDone = true;
   }
   uncheck() {
-    return this.isDone;
+    this.isDone = false;
+  }
+  render(){
+    return `<li class="completed_${this.isDone}"><span>${this.name}</span> <span>${this.description}</span></li>`;
   }
 }
-
-console.log(typeof ShoppingListItem);
